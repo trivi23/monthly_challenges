@@ -29,10 +29,10 @@ def home_page(request):
     #     redirected_path = reverse("monthly-challenges",args=[month])
     #     month_list += f'<li><a href="{redirected_path}">{month}</li>'
     # response_data = f"<ul>{month_list}</ul>"
-    try:
-        return HttpResponse(response_data)
-    except:
-        return HttpResponseNotFound("Not Found!")
+    # try:
+    #     return HttpResponse(response_data)
+    # except:
+    #     return HttpResponseNotFound("Not Found!")
 
 def monthly_challenge(request, month):
     try:
